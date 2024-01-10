@@ -1,0 +1,46 @@
+object Form2: TForm2
+  Left = 248
+  Height = 284
+  Top = 650
+  Width = 459
+  Caption = 'Menu'
+  ClientHeight = 284
+  ClientWidth = 459
+  DesignTimePPI = 120
+  Menu = MainMenu1
+  LCLVersion = '3.0.0.3'
+  object Label1: TLabel
+    Left = 100
+    Height = 24
+    Top = 100
+    Width = 130
+    Caption = 'Menu Aplikasi'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -20
+    Font.Name = 'Poppins SemiBold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object MainMenu1: TMainMenu
+    Left = 40
+    object MenuItem1: TMenuItem
+      Caption = 'Data Master'
+      OnClick = MenuItem1Click
+    end
+    object MenuItem2: TMenuItem
+      Caption = 'master/detail'
+      OnClick = MenuItem2Click
+    end
+    object MenuItem3: TMenuItem
+      Caption = 'Transaksi'
+      OnClick = MenuItem3Click
+    end
+    object MenuItem4: TMenuItem
+      Caption = 'Laporan'
+      OnClick = MenuItem4Click
+    end
+  end
+end
